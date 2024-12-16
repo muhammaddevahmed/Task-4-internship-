@@ -1,0 +1,416 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 1rem 2rem;
+  color: #fff;
+  position: relative;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brandname {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-icons i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #333;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #444;
+}
+
+/* Show dropdown on mobile screens */
+@media (max-width: 768px) {
+  .nav-icons i {
+    margin: 0 8px;
+  }
+}
+
+
+/* Search Bar */
+.search-bar-container {
+  display: flex;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;
+  width: 90vw;
+  margin-left: 10px;
+  
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+}
+
+.search-bar .search-btn {
+  padding: 10px;
+  background-color: #222;
+  color: #fff;
+  border: 2px solid #222;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-bar .search-btn i {
+  font-size: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .nav-icons i {
+    margin: 0 8px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-evenly;  /* Distribute tabs evenly */
+  margin-bottom: 2rem;
+  flex-wrap: wrap;  /* Ensure tabs wrap in case of small screens */
+}
+
+.tab {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 5px;  /* Add margin for spacing between tabs */
+}
+
+.tab:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.tab.active {
+  background-color: #222;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Responsive Design - Mobile View */
+@media (max-width: 768px) {
+  .tabs {
+    justify-content: space-around;  /* Adjust tab alignment on small screens */
+    flex-wrap: nowrap;  /* Ensure tabs stay in a single row */
+    overflow-x: auto;  /* Allow horizontal scroll if necessary */
+    padding-bottom: 10px;
+  }
+
+  .tab {
+    flex: 1;  /* Allow tabs to expand equally */
+    margin: 5px 10px;  /* Space out the tabs */
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .tab-content {
+    margin-top: 10px;
+  }
+}
+
+
+/* Large Banner Section */
+.large-banner {
+  position: relative;
+  width: 100%;
+  height: 320px; 
+  background-image: url('https://t3.ftcdn.net/jpg/06/32/90/44/360_F_632904407_iPLi90WdjZ0oKAeRiL98gEIeHIUtzWae.jpg');  /* Background color (or replace with background image) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.banner-content {
+  /* Semi-transparent background for readability */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.banner-title {
+  font-size: 3rem; /* Larger font for the title */
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.banner-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.banner-button {
+  padding: 15px 30px;
+  background-color: #ff6347; /* Button color (can be changed) */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.banner-button:hover {
+  background-color: #ff4500; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .large-banner {
+    height: 250px;  /* Adjust height for smaller screens */
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-description {
+    font-size: 1rem;
+  }
+
+  .banner-button {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+}
+
+
+/* Deals and Offers Section */
+.deals-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #ddd;
+  flex-wrap: nowrap; /* Prevent wrapping on mobile */
+}
+
+.deals-heading h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.timer-box {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.timer {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.timer span {
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.timer span:last-child {
+  margin-right: 0;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .deals-section {
+    flex-direction: row; /* Ensure it stays in one line */
+    justify-content: space-between;
+  }
+
+  .timer {
+    font-size: 1.5rem;
+  }
+
+  .timer span {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+
+  .deals-heading h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+.source-btn {
+  background-color: white;
+  color: blue;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 20px; /* This ensures the button is pushed to the bottom of the card */
+}
+
+.source-btn .arrow {
+  margin-left: 10px;
+}
+
+.source-btn:hover {
+  background-color: #555;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  
+  .source-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+
+/* Banner Section */
+.banner {
+  width: 100%;
+  height: 320px; /* Set a much higher height for the banner */
+  background-image: url('https://via.placeholder.com/1920x500'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.banner-content {
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.banner-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.banner-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.banner-btn {
+  background-color: #f4511e;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner-btn:hover {
+  background-color: #d44017;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .banner {
+    height: 250px; /* Adjust height on mobile for better fit */
+  }
+
+  .banner-heading {
+    font-size: 2rem;
+  }
+
+  .banner-text {
+    font-size: 1rem;
+  }
+
+  .banner-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+

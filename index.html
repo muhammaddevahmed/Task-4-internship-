@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Navigation Bar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="logo.png" alt="Brand Logo" class="logo">
+      <span class="brandname">ShopEase</span>
+    </div>
+    <div class="nav-icons">
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-user"></i>
+      <button class="menu-btn" id="menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Cart</a>
+      <a href="#">Account</a>
+    </div>
+  </nav>
+ 
+    <!-- Search Bar -->
+    <div class="search-bar-container">
+      <div class="search-bar">
+        <input type="text" placeholder="Search for products..." />
+        <button class="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Categories Section -->
+ 
+    <div class="tabs">
+      <a href="mobil-item-list.html"><button class="tab" id="all-tab">Categories</button></a>
+      <a href="mobil-item-list.html"><button class="tab" id="gadgets-tab">Gadgets</button></a>
+      <a href="mobil-item-list.html"><button class="tab" id="clothes-tab">Clothes</button></a>
+      <a href="mobil-item-list.html"><button class="tab" id="accessories-tab">Accessories</button></a>
+      <a href="mobil-item-list.html"><button class="tab" id="accessories-tab">Sports</button></a>
+    </div>
+
+     <!-- Large Banner Section -->
+  <section class="large-banner">
+    <div class="banner-content">
+      <h2 class="banner-title">Discover Our Latest Collection</h2>
+      <p class="banner-description">Explore the latest trends and exclusive offers. Shop now to find your favorite items!</p>
+      <a href="#" class="banner-button">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Deals and Offers Section -->
+  <section class="deals-section">
+    <div class="deals-heading">
+      <h2>Deals and Offers</h2>
+    </div>
+    <div class="timer-box">
+      <div class="timer">
+        <span id="days">00</span>
+        <span id="hours">00</span>
+        <span id="minutes">00</span>
+        <span id="seconds">60</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Cards Section -->
+  <section class="bg-gray-100 h-60">
+  
+  
+    <div class="flex gap-6 overflow-x-auto whitespace-nowrap scrollbar-hide mt-6 ml-4">
+      <!-- Card 1 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 relative">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 1</h3>
+        <span class="bg-red-500 text-white text-xs font-bold py-1 px-2 rounded-md">20% OFF</span>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 relative">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 2</h3>
+        <span class="bg-red-500 text-white text-xs font-bold py-1 px-2 rounded-md">15% OFF</span>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 relative">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 3</h3>
+        <span class="bg-red-500 text-white text-xs font-bold py-1 px-2 rounded-md">30% OFF</span>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 relative">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 4</h3>
+        <span class="bg-red-500 text-white text-xs font-bold py-1 px-2 rounded-md">10% OFF</span>
+      </div>
+  
+      <!-- Card 5 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 relative">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 5</h3>
+        <span class="bg-red-500 text-white text-xs font-bold py-1 px-2 rounded-md">25% OFF</span>
+      </div>
+  
+      <!-- Card 6 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 relative">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 6</h3>
+        <span class="bg-red-500 text-white text-xs font-bold py-1 px-2 rounded-md">18% OFF</span>
+      </div>
+  
+      <!-- Card 7 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 relative">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 7</h3>
+        <span class="bg-red-500 text-white text-xs font-bold py-1 px-2 rounded-md">50% OFF</span>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Home and Decor Section -->
+  <section class="bg-gray-100 h-96">
+    <h2 class="text-2xl font-bold mt-10 ml-4">You May Also Like</h2>
+
+    <div class="flex gap-6 overflow-x-auto whitespace-nowrap scrollbar-hide mt-8 ml-4">
+      <!-- Card 1 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 1</h3>
+        <p class="text-green-500 font-bold">$19.99</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 2</h3>
+        <p class="text-green-500 font-bold">$24.99</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 3</h3>
+        <p class="text-green-500 font-bold">$29.99</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 4</h3>
+        <p class="text-green-500 font-bold">$14.99</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 5</h3>
+        <p class="text-green-500 font-bold">$34.99</p>
+      </div>
+
+       <!-- Card 6 -->
+       <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 5</h3>
+        <p class="text-green-500 font-bold">$34.99</p>
+      </div>
+
+       <!-- Card 7 -->
+       <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 5</h3>
+        <p class="text-green-500 font-bold">$34.99</p>
+      </div>
+    </div>
+    </div>
+   
+  
+    
+    </div>
+    <button class="source-btn">Source Now <span class="arrow">&#8594;</span></button>
+
+    
+  </section>
+
+  
+
+  
+  <!-- Consumer Electronics -->
+  <section class="bg-gray-100 h-96">
+    <h2 class="text-2xl font-bold mt-10 ml-4">You May Also Like</h2>
+
+    <div class="flex gap-6 overflow-x-auto whitespace-nowrap scrollbar-hide mt-8 ml-4">
+      <!-- Card 1 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 1</h3>
+        <p class="text-green-500 font-bold">$19.99</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 2</h3>
+        <p class="text-green-500 font-bold">$24.99</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 3</h3>
+        <p class="text-green-500 font-bold">$29.99</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 4</h3>
+        <p class="text-green-500 font-bold">$14.99</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 5</h3>
+        <p class="text-green-500 font-bold">$34.99</p>
+      </div>
+
+       <!-- Card 6 -->
+       <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 5</h3>
+        <p class="text-green-500 font-bold">$34.99</p>
+      </div>
+
+       <!-- Card 7 -->
+       <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+        <img src="https://cdn.pixabay.com/photo/2022/08/29/15/11/clock-7419071_640.jpg" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Product Title 5</h3>
+        <p class="text-green-500 font-bold">$34.99</p>
+      </div>
+    </div>
+    </div>
+   
+  
+    
+    </div>
+    <button class="source-btn">Source Now <span class="arrow">&#8594;</span></button>
+
+    
+  </section>
+
+  <!-- Banner Section -->
+  <section class="banner">
+    <div class="banner-content">
+      <h2 class="banner-heading">Exclusive Offers Just for You!</h2>
+      <p class="banner-text">Hurry, limited time offers on your favorite products. Don't miss out!</p>
+      <button class="banner-btn">Shop Now</button>
+    </div>
+  </section>
+  <section class="mt-12">
+  <h2 class="text-3xl font-bold mb-6 ml-4">Recommended Items</h2>
+
+  <!-- Grid layout with responsive columns -->
+  <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-2">
+    <!-- Card 1 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full h-48 sm:h-56 md:h-96 object-cover rounded-md mb-4">
+      <h3 class="font-semibold text-base mb-2">Product Title 1</h3>
+      <p class="text-green-500 font-bold text-lg">$19.99</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full h-48 sm:h-56 md:h-96 object-cover rounded-md mb-4">
+      <h3 class="font-semibold text-base mb-2">Product Title 2</h3>
+      <p class="text-green-500 font-bold text-lg">$24.99</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full h-48 sm:h-56 md:h-96 object-cover rounded-md mb-4">
+      <h3 class="font-semibold text-base mb-2">Product Title 3</h3>
+      <p class="text-green-500 font-bold text-lg">$29.99</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full h-48 sm:h-56 md:h-96 object-cover rounded-md mb-4">
+      <h3 class="font-semibold text-base mb-2">Product Title 4</h3>
+      <p class="text-green-500 font-bold text-lg">$14.99</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full h-48 sm:h-56 md:h-96 object-cover rounded-md mb-4">
+      <h3 class="font-semibold text-base mb-2">Product Title 5</h3>
+      <p class="text-green-500 font-bold text-lg">$34.99</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full h-48 sm:h-56 md:h-96 object-cover rounded-md mb-4">
+      <h3 class="font-semibold text-base mb-2">Product Title 6</h3>
+      <p class="text-green-500 font-bold text-lg">$18.99</p>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-12 mt-10">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+      <!-- Brand Name and Logo -->
+      <div class="flex items-center space-x-4">
+        <img src="https://via.placeholder.com/50" alt="Brand Logo" class="w-16 h-16 object-cover rounded-full shadow-lg">
+        <span class="text-4xl font-bold text-white tracking-wide">Brand Name</span>
+      </div>
+
+      <!-- Links Section -->
+      <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-center md:text-left">
+        <a href="#" class="text-gray-200 hover:text-white font-medium transition-all duration-300">Home</a>
+        <a href="#" class="text-gray-200 hover:text-white font-medium transition-all duration-300">Shop</a>
+        <a href="#" class="text-gray-200 hover:text-white font-medium transition-all duration-300">About Us</a>
+        <a href="#" class="text-gray-200 hover:text-white font-medium transition-all duration-300">Contact</a>
+        <a href="#" class="text-gray-200 hover:text-white font-medium transition-all duration-300">Privacy Policy</a>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="flex space-x-6 text-xl">
+        <a href="#" class="text-gray-200 hover:text-white transition-all duration-300"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-gray-200 hover:text-white transition-all duration-300"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-gray-200 hover:text-white transition-all duration-300"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-gray-200 hover:text-white transition-all duration-300"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Rights Reserved Section -->
+    <div class="mt-8 text-center text-sm text-gray-300">
+      <p>&copy; 2024 <span class="font-bold">Brand Name</span>. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+

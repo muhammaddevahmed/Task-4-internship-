@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style1.css">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <!-- Back Arrow using Unicode -->
+            <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i></a>
+
+            <span style="margin-left: 16px;" class="brandname">Mobile Accessory</span>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user"></i>
+
+        </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products..." />
+            <button class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Categories Section -->
+
+    <div class="tabs">
+        <button class="tab" id="all-tab">Tablets</button>
+        <button class="tab" id="gadgets-tab">Smartphone</button>
+        <button class="tab" id="clothes-tab">Ipad</button>
+        <button class="tab" id="accessories-tab">Ipod</button>
+        <button class="tab" id="accessories-tab">Laptop</button>
+    </div>
+
+    <div class="dropdown-container">
+        <select class="dropdown" id="filterDropdown">
+          <option value="">Filter</option>
+          <option value="price">Price</option>
+          <option value="category">Category</option>
+        </select>
+  
+        <select class="dropdown" id="sortDropdown">
+          <option value="">Sort</option>
+          <option value="asc">Price: Low to High</option>
+          <option value="desc">Price: High to Low</option>
+        </select>
+
+        <div class="icons">
+            <div class="dots-icon">
+              <div class="dot-row">
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <div class="dot-row">
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+            <div class="hamburger-icon">
+              &#9776;
+            </div>
+          </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/100" alt="Product Image">
+          <div class="discount-badge">20% OFF</div>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Product Name</h3>
+          <p class="price">$49.99</p>
+          <div class="ratings">
+            ⭐⭐⭐⭐☆
+          </div>
+          <p style="color: greenyellow;">Free Shiping</p>
+        </div>
+      </div>
+    
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/100" alt="Product Image">
+          <div class="discount-badge">30% OFF</div>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Another Product</h3>
+          <p class="price">$39.99</p>
+          <div class="ratings">
+            ⭐⭐⭐⭐⭐
+          </div>
+          <p style="color: greenyellow;">Free Shiping</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/100" alt="Product Image">
+          <div class="discount-badge">30% OFF</div>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Another Product</h3>
+          <p class="price">$39.99</p>
+          <div class="ratings">
+            ⭐⭐⭐⭐⭐
+          </div>
+          <p style="color: greenyellow;">Free Shiping</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/100" alt="Product Image">
+          <div class="discount-badge">30% OFF</div>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Another Product</h3>
+          <p class="price">$39.99</p>
+          <div class="ratings">
+            ⭐⭐⭐⭐⭐
+          </div>
+          <p style="color: greenyellow;">Free Shiping</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/100" alt="Product Image">
+          <div class="discount-badge">30% OFF</div>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Another Product</h3>
+          <p class="price">$39.99</p>
+          <div class="ratings">
+            ⭐⭐⭐⭐⭐
+          </div>
+          <p style="color: greenyellow;">Free Shiping</p>
+        </div>
+      </div>
+      
+      <section>
+        <h2 class="text-3xl font-bold mt-10 ml-4">You May Also Like</h2>
+    
+        <div class="flex gap-4 overflow-x-auto whitespace-nowrap scrollbar-hide mt-6">
+          <!-- Card 1 -->
+          <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+            <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+            <h3 class="font-semibold text-sm mb-1">Product Title 1</h3>
+            <p class="text-green-500 font-bold">$19.99</p>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+            <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+            <h3 class="font-semibold text-sm mb-1">Product Title 2</h3>
+            <p class="text-green-500 font-bold">$24.99</p>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+            <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+            <h3 class="font-semibold text-sm mb-1">Product Title 3</h3>
+            <p class="text-green-500 font-bold">$29.99</p>
+          </div>
+    
+          <!-- Card 4 -->
+          <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+            <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+            <h3 class="font-semibold text-sm mb-1">Product Title 4</h3>
+            <p class="text-green-500 font-bold">$14.99</p>
+          </div>
+    
+          <!-- Card 5 -->
+          <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+            <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+            <h3 class="font-semibold text-sm mb-1">Product Title 5</h3>
+            <p class="text-green-500 font-bold">$34.99</p>
+          </div>
+
+           <!-- Card 6 -->
+           <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+            <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+            <h3 class="font-semibold text-sm mb-1">Product Title 5</h3>
+            <p class="text-green-500 font-bold">$34.99</p>
+          </div>
+
+           <!-- Card 7 -->
+           <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0">
+            <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
+            <h3 class="font-semibold text-sm mb-1">Product Title 5</h3>
+            <p class="text-green-500 font-bold">$34.99</p>
+          </div>
+        </div>
+        </div>
+
+        
+        </div>
+
+        
+      </section>
+
+      <footer class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-12 mt-10">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            <!-- Brand Name and Logo -->
+            <div class="flex items-center space-x-4">
+              <img src="https://via.placeholder.com/50" alt="Brand Logo" class="w-16 h-16 object-cover rounded-full shadow-lg">
+              <span class="text-4xl font-bold text-white tracking-wide">Brand Name</span>
+            </div>
+      
+            <!-- Links Section -->
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-center md:text-left">
+              <a href="#" class="text-gray-200 hover:text-white font-medium transition-all duration-300">Home</a>
+              <a href="#" class="text-gray-200 hover:text-white font-medium transition-all duration-300">Shop</a>
+              <a href="#" class="text-gray-200 hover:text-white font-medium transition-all duration-300">About Us</a>
+              <a href="#" class="text-gray-200 hover:text-white font-medium transition-all duration-300">Contact</a>
+              <a href="#" class="text-gray-200 hover:text-white font-medium transition-all duration-300">Privacy Policy</a>
+            </div>
+      
+            <!-- Social Icons -->
+            <div class="flex space-x-6 text-xl">
+              <a href="#" class="text-gray-200 hover:text-white transition-all duration-300"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-gray-200 hover:text-white transition-all duration-300"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-gray-200 hover:text-white transition-all duration-300"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-gray-200 hover:text-white transition-all duration-300"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+      
+          <!-- Rights Reserved Section -->
+          <div class="mt-8 text-center text-sm text-gray-300">
+            <p>&copy; 2024 <span class="font-bold">Brand Name</span>. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      
+  
+  
+     
+
+    
+    
+      
+
+    
+    <script src="script1.js"></script>
+</body>
+
+</html>

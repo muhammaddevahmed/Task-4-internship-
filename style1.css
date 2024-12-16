@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 1rem 2rem;
+    color: #fff;
+    position: relative;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .brandname {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-icons i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .menu-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    width: 150px;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #444;
+  }
+  
+  /* Show dropdown on mobile screens */
+  @media (max-width: 768px) {
+    .nav-icons i {
+      margin: 0 8px;
+    }
+  }
+  
+  
+  /* Search Bar */
+  .search-bar-container {
+    display: flex;
+    margin: 1rem auto;
+    width: 100%;
+  }
+  
+  .search-bar {
+    display: flex;
+    width: 90vw;
+    margin-left: 10px;
+    
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+  }
+  
+  .search-bar .search-btn {
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #222;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .search-bar .search-btn i {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .nav-icons i {
+      margin: 0 8px;
+    }
+  
+    .search-bar {
+      width: 100%;
+    }
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-evenly;  /* Distribute tabs evenly */
+    margin-bottom: 2rem;
+    flex-wrap: wrap;  /* Ensure tabs wrap in case of small screens */
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 5px;  /* Add margin for spacing between tabs */
+  }
+  
+  .tab:hover {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .tab.active {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .tab-content {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  /* Responsive Design - Mobile View */
+  @media (max-width: 768px) {
+    .tabs {
+      justify-content: space-around;  /* Adjust tab alignment on small screens */
+      flex-wrap: nowrap;  /* Ensure tabs stay in a single row */
+      overflow-x: auto;  /* Allow horizontal scroll if necessary */
+      padding-bottom: 10px;
+    }
+  
+    .tab {
+      flex: 1;  /* Allow tabs to expand equally */
+      margin: 5px 10px;  /* Space out the tabs */
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  
+    .tab-content {
+      margin-top: 10px;
+    }
+  }
+
+  /* Dropdown Container */
+.dropdown-container {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+  }
+  
+  .dropdown {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 40vw;
+  }
+  
+  /* Icons Container */
+  .icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+  }
+  
+  /* Four Dots Icon */
+  .dots-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+    
+  }
+  
+  .dot-row {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 50%;
+  }
+  
+  /* Hamburger Icon */
+  .hamburger-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+
+/* Product Card Container */
+.product-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 95vw;
+  }
+  
+  /* Product Image */
+  .product-image {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Discount Badge */
+  .discount-badge {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #ff4757;
+    color: #fff;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+  }
+  
+  /* Product Details */
+  .product-details {
+    flex: 1;
+  }
+  
+  .product-name {
+    font-size: 1.2rem;
+    margin: 0 0 5px;
+  }
+  
+  .price {
+    color: #2ecc71;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .ratings {
+    font-size: 1.2rem;
+    color: #f39c12;
+  }
+
+ 
