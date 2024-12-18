@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Navigation Bar</title>
+  <title>ShopSphere</title>
+  <link rel="shortcut icon" href="logoo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -59,20 +60,29 @@
   </section>
 
   <!-- Deals and Offers Section -->
-  <section class="deals-section">
-    <div class="deals-heading">
-      <h2>Deals and Offers</h2>
+  <section class="deals-section p-8">
+    <div class="deals-heading mb-4">
+      <h2 class="text-lg font-bold">Deals and Offers</h2>
     </div>
-    <div class="timer-box">
-      <div class="timer">
-        <span id="days">10</span>
-        <span id="hours">04</span>
-        <span id="minutes">60</span>
-        <span id="seconds">40</span>
+    <div class="grid grid-cols-4 sm:grid-cols-4 gap-4 mb-6">
+      <div class="bg-blue-600 text-white p-2 rounded-lg text-center w-10 h-10">
+        <p class="text-xs font-semibold" id="days">00</p>
+        <p class="text-xs">D</p>
+      </div>
+      <div class="bg-blue-600 text-white p-2 rounded-lg text-center w-10 h-10">
+        <p class="text-xs font-semibold" id="hours">00</p>
+        <p class="text-xs">H</p>
+      </div>
+      <div class="bg-blue-600 text-white p-2 rounded-lg text-center w-10 h-10">
+        <p class="text-xs font-semibold" id="minutes">00</p>
+        <p class="text-xs">M</p>
+      </div>
+      <div class="bg-blue-600 text-white p-2 rounded-lg text-center w-10 h-10">
+        <p class="text-xs font-semibold" id="seconds">00</p>
+        <p class="text-xs">S</p>
       </div>
     </div>
   </section>
-
 
   <!-- Cards Section -->
   <section class="bg-gray-100 h-72">
@@ -206,51 +216,51 @@
     <div class="flex gap-6 overflow-x-auto whitespace-nowrap scrollbar-hide mt-8 ml-4">
       <!-- Card 1 -->
       <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 transform hover:scale-105 transition-transform duration-300">
-        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
-        <h3 class="font-semibold text-sm mb-1">Product Title 1</h3>
-        <p class="text-green-500 font-bold">$19.99</p>
+        <img src="https://i.pinimg.com/736x/40/61/c8/4061c8841fa8ab02aa484db1cfcb96f0.jpg" alt="Product Image" class="w-full h-40 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Dell Laptop</h3>
+        <p class="text-green-500 font-bold">$130.99</p>
       </div>
 
       <!-- Card 2 -->
       <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 transform hover:scale-105 transition-transform duration-300">
-        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
-        <h3 class="font-semibold text-sm mb-1">Product Title 2</h3>
-        <p class="text-green-500 font-bold">$24.99</p>
+        <img src="https://i.pinimg.com/736x/1a/68/94/1a68947fcbd184b24912abe8f6859ef1.jpg" alt="Product Image" class="w-full h-40 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Iphone 14 pro max</h3>
+        <p class="text-green-500 font-bold">$200.99</p>
       </div>
 
       <!-- Card 3 -->
       <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 transform hover:scale-105 transition-transform duration-300">
-        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
-        <h3 class="font-semibold text-sm mb-1">Product Title 3</h3>
-        <p class="text-green-500 font-bold">$29.99</p>
+        <img src="https://i.pinimg.com/736x/19/1c/6a/191c6a2c503913b2d27fae986bdbea5d.jpg" alt="Product Image" class="w-full h-40 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Wireless Charger</h3>
+        <p class="text-green-500 font-bold">$49.99</p>
       </div>
 
       <!-- Card 4 -->
       <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 transform hover:scale-105 transition-transform duration-300">
-        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
-        <h3 class="font-semibold text-sm mb-1">Product Title 4</h3>
-        <p class="text-green-500 font-bold">$14.99</p>
+        <img src="https://i.pinimg.com/736x/6a/a8/3d/6aa83d169c684beab2e9f2a6bd24e806.jpg" alt="Product Image" class="w-full h-40 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Smart Watch</h3>
+        <p class="text-green-500 font-bold">$35.99</p>
       </div>
 
       <!-- Card 5 -->
       <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 transform hover:scale-105 transition-transform duration-300">
-        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
-        <h3 class="font-semibold text-sm mb-1">Product Title 5</h3>
+        <img src="https://i.pinimg.com/736x/43/15/ae/4315ae69df9daa2550203db798b0d77f.jpg" alt="Product Image" class="w-full h-40 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Wireless Headphone</h3>
         <p class="text-green-500 font-bold">$34.99</p>
       </div>
 
        <!-- Card 6 -->
        <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 transform hover:scale-105 transition-transform duration-300">
-        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
-        <h3 class="font-semibold text-sm mb-1">Product Title 5</h3>
-        <p class="text-green-500 font-bold">$34.99</p>
+        <img src="https://i.pinimg.com/736x/c9/81/55/c98155f19270a5d8bfce70646b26a1c5.jpg" alt="Product Image" class="w-full h-40 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">AirPods</h3>
+        <p class="text-green-500 font-bold">$60.99</p>
       </div>
 
        <!-- Card 7 -->
        <div class="w-48 bg-white p-4 rounded-lg shadow-md shrink-0 transform hover:scale-105 transition-transform duration-300">
-        <img src="https://cdn.pixabay.com/photo/2022/08/29/15/11/clock-7419071_640.jpg" alt="Product Image" class="w-full h-32 object-cover rounded-md mb-2">
-        <h3 class="font-semibold text-sm mb-1">Product Title 5</h3>
-        <p class="text-green-500 font-bold">$34.99</p>
+        <img src="https://i.pinimg.com/736x/87/de/00/87de0078ab17ef370e9cdf532076b1ce.jpg" alt="Product Image" class="w-full h-40 object-cover rounded-md mb-2">
+        <h3 class="font-semibold text-sm mb-1">Gaming PC</h3>
+        <p class="text-green-500 font-bold">$180.99</p>
       </div>
     </div>
     </div>
@@ -278,44 +288,45 @@
   <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-2">
     <!-- Card 1 -->
     <div class="bg-white p-4 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
-      <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full h-48 sm:h-56 md:h-96 object-cover rounded-md mb-4">
-      <h3 class="font-semibold text-base mb-2">Product Title 1</h3>
-      <p class="text-green-500 font-bold text-lg">$19.99</p>
+      <img src="https://i.pinimg.com/736x/99/70/01/9970015257600489c96e5aed9418cd1c.jpg"alt="Product Image"class="w-full h-48 sm:h-60 md:h-96 lg:h-[500px] xl:h-[600px] object-cover rounded-md mb-4"/>
+    
+      <h3 class="font-semibold text-base mb-2">Samsung Galaxy S21 Ultra</h3>
+      <p class="text-green-500 font-bold text-lg">$189.99</p>
     </div>
 
     <!-- Card 2 -->
     <div class="bg-white p-4 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
-      <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full h-48 sm:h-56 md:h-96 object-cover rounded-md mb-4">
-      <h3 class="font-semibold text-base mb-2">Product Title 2</h3>
+      <img src="https://i.pinimg.com/736x/76/37/9e/76379e02bece6e4388110d2690434737.jpg"alt="Product Image"class="w-full h-48 sm:h-60 md:h-96 lg:h-[500px] xl:h-[600px] object-cover rounded-md mb-4"/>
+      <h3 class="font-semibold text-base mb-2">Ladies Kurti Shalwar</h3>
       <p class="text-green-500 font-bold text-lg">$24.99</p>
     </div>
 
     <!-- Card 3 -->
     <div class="bg-white p-4 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
-      <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full h-48 sm:h-56 md:h-96 object-cover rounded-md mb-4">
-      <h3 class="font-semibold text-base mb-2">Product Title 3</h3>
-      <p class="text-green-500 font-bold text-lg">$29.99</p>
+      <img src="https://i.pinimg.com/736x/0a/c6/3e/0ac63e45fa21df1cd4a8e62e6f2e7bf1.jpg"alt="Product Image"class="w-full h-48 sm:h-60 md:h-96 lg:h-[500px] xl:h-[600px] object-cover rounded-md mb-4"/>
+      <h3 class="font-semibold text-base mb-2">Fidget Spinner</h3>
+      <p class="text-green-500 font-bold text-lg">$5.99</p>
     </div>
 
     <!-- Card 4 -->
     <div class="bg-white p-4 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
-      <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full h-48 sm:h-56 md:h-96 object-cover rounded-md mb-4">
-      <h3 class="font-semibold text-base mb-2">Product Title 4</h3>
-      <p class="text-green-500 font-bold text-lg">$14.99</p>
+      <img src="https://i.pinimg.com/736x/be/61/0b/be610b47a66e0a9cc5d9599796675681.jpg"alt="Product Image"class="w-full h-48 sm:h-60 md:h-96 lg:h-[500px] xl:h-[600px] object-cover rounded-md mb-4"/>
+      <h3 class="font-semibold text-base mb-2">Sofa Set</h3>
+      <p class="text-green-500 font-bold text-lg">$70.99</p>
     </div>
 
     <!-- Card 5 -->
     <div class="bg-white p-4 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
-      <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full h-48 sm:h-56 md:h-96 object-cover rounded-md mb-4">
-      <h3 class="font-semibold text-base mb-2">Product Title 5</h3>
-      <p class="text-green-500 font-bold text-lg">$34.99</p>
+      <img src="https://i.pinimg.com/736x/17/d8/51/17d851c83b2f0d9510a53f9a16aab13e.jpg"alt="Product Image"class="w-full h-48 sm:h-60 md:h-96 lg:h-[500px] xl:h-[600px] object-cover rounded-md mb-4"/>
+      <h3 class="font-semibold text-base mb-2">Cactus Plant</h3>
+      <p class="text-green-500 font-bold text-lg">$10.99</p>
     </div>
 
     <!-- Card 6 -->
     <div class="bg-white p-4 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
-      <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full h-48 sm:h-56 md:h-96 object-cover rounded-md mb-4">
-      <h3 class="font-semibold text-base mb-2">Product Title 6</h3>
-      <p class="text-green-500 font-bold text-lg">$18.99</p>
+      <img src="https://i.pinimg.com/736x/09/ef/bc/09efbcd04ef21f8e81986abe82025d08.jpg"alt="Product Image"class="w-full h-48 sm:h-60 md:h-96 lg:h-[500px] xl:h-[600px] object-cover rounded-md mb-4"/>
+      <h3 class="font-semibold text-base mb-2">Gold Plated Watch</h3>
+      <p class="text-green-500 font-bold text-lg">$45.99</p>
     </div>
   </div>
 </section>
